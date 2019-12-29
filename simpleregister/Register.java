@@ -22,9 +22,10 @@ public class Register {
 	int i=0;
 	do
 	{
-		 obj[i]=new Register();
+		 obj[i]=new Register();//creating array of object
 	Scanner s=new Scanner(System.in);
 	System.out.println("Registration");
+		//getting values
 	System.out.println("Enter your name");
 	    obj[i].name=s.nextLine();
 	System.out.println("Enter your address");
@@ -38,6 +39,7 @@ public class Register {
 	System.out.println("Enter your proof ID");
 	obj[i].proofid=s.next();
 	
+		//printing values
 	System.out.println(obj[i].name);
 	System.out.println(obj[i].address);
 	System.out.println(obj[i].contactno);
@@ -46,7 +48,7 @@ public class Register {
 	System.out.println(obj[i].proofid);
 	System.out.println("Thank you for registering."+"Your ID is :"+ ++obj[i].reg);
 	
-	obj[i].arr[obj[i].reg-1]=obj[i].reg;
+	obj[i].arr[obj[i].reg-1]=obj[i].reg;  //incrementing count in array
 	System.out.println("Do you want to Continue Registration(y/n)");
 	d=s.next();
 	i++;
